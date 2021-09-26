@@ -5,14 +5,17 @@ import Form from "./components/Form/Form";
 
 import duey from "./images/duey.jpg";
 
+import useStyles from "./styles";
+
 function App() {
+  const classes = useStyles();
   return (
     <Container maxWidth="lg">
-      <AppBar position="static" color="inherit">
-        <Typography variant="h2" align="center">
+      <AppBar className={classes.appBar} position="static" color="inherit">
+        <Typography className={classes.heading} variant="h2" align="center">
           Duey Memories
         </Typography>
-        <img src={duey} alt="duey" height="100" />
+        <img className={classes.image} src={duey} alt="duey" height="100" />
       </AppBar>
       <Grow in>
         <Container>
