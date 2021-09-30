@@ -6,7 +6,7 @@ import { getPosts } from "./actions/posts";
 import Posts from "./components/Posts/Posts";
 import Form from "./components/Form/Form";
 
-import duey from "./images/duey.jpg";
+import DTP from "./images/DTP1.jpg";
 
 import useStyles from "./styles";
 
@@ -23,9 +23,9 @@ function App() {
     <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography className={classes.heading} variant="h2" align="center">
-          Duey Memories
+          InstaDuey
         </Typography>
-        <img className={classes.image} src={duey} alt="duey" height="100" />
+        <img className={classes.image} src={DTP} alt="duey" height="100" />
       </AppBar>
       <Grow in>
         <Container>
